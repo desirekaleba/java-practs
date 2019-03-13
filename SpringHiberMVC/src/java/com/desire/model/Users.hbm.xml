@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 3, 2019 1:08:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.desire.model.Users" table="users" catalog="springtest" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="firstname" length="50" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="52" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="52" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="18" />
+        </property>
+    </class>
+</hibernate-mapping>
